@@ -447,7 +447,7 @@ public class Main {
 
     //This method calls a preorder method
     public static List<Integer> preorderTraversal(TreeNode root) {
-        if(!result.isEmpty()) result.clear();
+        if(!result.isEmpty()) result.clear(); //This extra line just resets the used list.
         dfsPreOrder(root);
         return result;
     }
@@ -462,7 +462,7 @@ public class Main {
 
     //This method calls an inorder method
     public static List<Integer> inorderTraversal(TreeNode root) {
-        if(!result.isEmpty()) result.clear();
+        if(!result.isEmpty()) result.clear(); //This extra line just resets the used list.
         dfsInOrder(root);
         return result;
     }
@@ -477,7 +477,7 @@ public class Main {
 
     //This method calls a postorder method
     public static List<Integer> postorderTraversal(TreeNode root) {
-        if(!result.isEmpty()) result.clear();
+        if(!result.isEmpty()) result.clear(); //This extra line just resets the used list.
         dfsPostOrder(root);
         return result;
     }
